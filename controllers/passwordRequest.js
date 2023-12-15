@@ -38,7 +38,7 @@ passwordResetRouter.post('/',async(request,response)=>{
            await user.save();
 
         //    send email with the token
-        const resetUrl = `http://localhost:5173/reset-password?token=${token}`;
+        const resetUrl = `https://flourishing-cascaron-bece24.netlify.app/reset-password?token=${token}`;
 
 
     // configure Nodemailer with you email service
